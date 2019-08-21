@@ -1,0 +1,71 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6em;
+   }
+
+.container{
+    width:100%;
+    margin:auto;
+    padding:10px;
+    
+}
+
+#bankHead{
+    width:100%;
+    margin:auto;
+    padding:40px;
+    
+    background:skyblue;
+    color:black;
+    font-size: 2em;
+}
+
+h1{
+    text-align: center;
+}
+
+.wrap{
+    width:50%;
+    margin:auto;
+    padding:20px;
+}
+#bank-selection{
+    width:25%;
+    padding:10px;
+    border:5px solid skyblue;
+    border-radius:5px;
+    
+}
+#bank-search{
+    width:50%;
+    margin:auto;
+    padding:10px;
+    border:5px solid skyblue;
+    border-radius:5px;
+
+}
+
+table{
+    width:100%;
+    margin:auto;
+}
+
+#table-head th{
+    text-align:center;
+    border-bottom:1px solid black;
+    padding:10px;
+    
+
+}
+
+#table-body td{
+   text-align:center;
+   border-bottom:1px solid darkgray;
+   padding:8px;
+  
+}
