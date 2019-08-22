@@ -1,6 +1,7 @@
 const options=document.getElementById("bank-selection");
 const search=document.getElementById("bank-search");
 
+
 var jsonObjt;
     fetch('https://vast-shore-74260.herokuapp.com/banks?city=MUMBAI')
     .then(response => response.json())
@@ -8,6 +9,7 @@ var jsonObjt;
     .then(function(){
         search.addEventListener('keyup', function(e){
             let searchValue=e.target.value.toUpperCase();
+            
             console.log(searchValue);
             document.getElementById("table-body").innerHTML="";
             if(searchValue!=''&&options.value.toUpperCase()=='MUMBAI')
@@ -39,10 +41,25 @@ var jsonObjt;
                     }
                 });
                 console.log(count);
+                
             }
             else{
                     //add code to delete all rows from dom
                     document.getElementById("table-body").innerHTML="";
                 }
+            document.getElementById("table-body").addEventListener("click",function(e){
+            /*console.log(e.target);
+            row=e.target.parentElement;
+            console.log(row);
+            ifsc=row.cells[0].innerHTML;
+            console.log(ifsc);*/
+            window.location.href = "bank.html"; 
+            //document.getElementById("header").innerHTML="Welcome to our bank"'//-${ifsc}`;
         });
+            
+           
     });
+    
+        
+});
+
